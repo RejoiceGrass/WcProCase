@@ -9,3 +9,37 @@
     </view>
   </view>
 </view>
+
+<view class="banner">
+  <swiper indicator-dots indicator-color="{255,255,255,0.5}"
+  indicator-active-color="#fff" circular autoplay interval="3000">
+    <swiper-item><image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=81033113,1044747340&fm=26&gp=0.jpg"></image></swiper-item>
+    <swiper-item><image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=219737586,1121778712&fm=26&gp=0.jpg"></image></swiper-item>
+    <swiper-item><image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=417225423,188129431&fm=26&gp=0.jpg"></image></swiper-item>
+  </swiper>
+</view>
+
+<scroll-view class="major" scroll-x>
+  <view class="majorCon">
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng1.png"></image>
+      <view class="txt">语文</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng2.png"></image>
+      <view class="txt">数学</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng3.png"></image>
+      <view class="txt">外语</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng4.png"></image>
+      <view class="txt">物理</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng5.png"></image>
+      <view class="txt">化学</view>
+    </navigator>
+  </view>
+</scroll-view>
