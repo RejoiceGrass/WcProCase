@@ -1,3 +1,4 @@
+/*导航栏*/
 .header{
   width: 750rpx;
   height: 100rpx;
@@ -11,11 +12,16 @@
 .hdcon navigator{
   height: 50rpx;
 }
-.hdcon image{
-  height: 100%;
-}
 .kefu{
   position: relative;
+}
+.logo-image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.kefu-image{
+  width: 50rpx;
+  height: 50rpx;
 }
 .kefu .btn{
   position: absolute;
@@ -26,6 +32,7 @@
   opacity: 0;
   animation: dh linear 1s infinite;
 }
+/*轮播图*/
 .banner{
   width: 100%;
   height: 400rpx;
@@ -38,6 +45,7 @@
   width: 100%;
   height: 400rpx;
 }
+/* 主要学科*/
 /* .majorCon{
   display: flex;
   padding: 20rpx 0;
@@ -60,4 +68,71 @@
 .major .txt{
   font-size: 26rpx;
   margin-top: 10rpx;
+}
+/* 学生作品标题*/
+.pubTile{
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.pubTile .txt{
+  font-size: 40rpx;
+  display: flex;
+  justify-content: space-between; 
+}
+.pubTile.more{
+  font-size: 34rpx;
+  color: black;
+}
+.tip{
+  width: 20rpx;
+  height: 40rpx;
+  margin-top: 8rpx;
+}
+/*学员作品模块*/
+.works{
+  background: #f0f3f8;
+  padding: 90rpx 0 70rpx ;
+}
+.wkMain{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wkMain .stuBox{
+  width: 346rpx;
+  height: 214rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.wkMain .stuPic{
+  width: 100%;
+  height: 100%;
+}
+.wkMain .stuPicView{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top:0;
+  left: 0;
+  color: #f0f3f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wkMain .stuPicView .stuPicTran{
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+}
+.wkMain .stuPicView .line{
+  width: 50rpx;
+  height: 2rpx;
+  background: #fff;
+  margin:10rpx 0 20rpx;
 }

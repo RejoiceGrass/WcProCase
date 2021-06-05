@@ -1,24 +1,32 @@
+<!-- 导航栏 -->
 <view class="header">
   <view class="container hdcon">
     <navigator open-type="switchTab" url="/pages/index/index" class="logo">
-      <image mode="heightFix" src="/images/logo .png"></image>
+      <image class="logo-image" mode="scaleToFill" src="/images/logo .png"></image>
     </navigator>
     <view class="kefu">
       <button class="btn" open-type="contact"></button>
-      <image mode="heightFix" src="/images/kefu.png"></image>
+      <image class="kefu-image" mode="scaleToFill" src="/images/kefu.png"></image>
     </view>
   </view>
 </view>
-
+<!-- 轮播图 -->
 <view class="banner">
-  <swiper indicator-dots indicator-color="{255,255,255,0.5}"
-  indicator-active-color="#fff" circular autoplay interval="3000">
-    <swiper-item><image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=81033113,1044747340&fm=26&gp=0.jpg"></image></swiper-item>
-    <swiper-item><image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=219737586,1121778712&fm=26&gp=0.jpg"></image></swiper-item>
-    <swiper-item><image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=417225423,188129431&fm=26&gp=0.jpg"></image></swiper-item>
+  <swiper indicator-dots indicator-color="{255,255,255,0.5}" indicator-active-color="#fff" circular autoplay
+    interval="3000">
+    <swiper-item>
+      <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=81033113,1044747340&fm=26&gp=0.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=219737586,1121778712&fm=26&gp=0.jpg">
+      </image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=417225423,188129431&fm=26&gp=0.jpg"></image>
+    </swiper-item>
   </swiper>
 </view>
-
+<!-- 主要学科 -->
 <scroll-view class="major" scroll-x>
   <view class="majorCon">
     <navigator class="box" url="">
@@ -43,3 +51,27 @@
     </navigator>
   </view>
 </scroll-view>
+<!-- 作品区域 -->
+<view class="works">
+  <view class="container">
+    <view class="pubTile">
+      <view class="txt">
+        <image class="tip" mode="scaleToFill"
+          src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4104395315,636886107&fm=26&gp=0.jpg"></image>
+        <view>学生作品</view>
+      </view>
+      <navigator class="more">更多 ></navigator>
+    </view>
+
+    <view class="wkMain">
+      <navigator class="stuBox" wx:for="{{8}}">
+        <image class="stuPic" src="/images/xsal1.jpg"></image>
+        <view class="stuPicView">
+          <view class="stuPicTile">我的最爱</view>
+          <view class="line"></view>
+          <view class="stuPicTran">My favourite</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
