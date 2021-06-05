@@ -64,12 +64,41 @@
     </view>
 
     <view class="wkMain">
-      <navigator class="stuBox" wx:for="{{8}}">
+      <navigator class="stuBox" wx:for="{{8}}" >
         <image class="stuPic" src="/images/xsal1.jpg"></image>
         <view class="stuPicView">
           <view class="stuPicTile">我的最爱</view>
           <view class="line"></view>
           <view class="stuPicTran">My favourite</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!-- 行业动态 -->
+<view class="dynamic">
+  <view class="container">
+    <view class="pubTile">
+      <view class="txt">
+        <image class="tip" mode="scaleToFill"
+          src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4104395315,636886107&fm=26&gp=0.jpg"></image>
+        <view>行业动态</view>
+      </view>
+      <navigator class="more">更多 ></navigator>
+    </view>
+
+    <view class="dyMain" >
+      <navigator class="dyItem" wx:for="{{5}}">
+        <view class="dyPic">
+          <image mode="scaleToFill" src="/images/xsal5.jpg"></image>
+        </view>
+        <view class="dyTI">
+        <view class="dyText">
+          标题在这里
+        </view>
+        <view class="dyInfo">
+          作者: 司凯乐<text space="ensp"> - </text>时间: 2021-06-06
+        </view>
         </view>
       </navigator>
     </view>
