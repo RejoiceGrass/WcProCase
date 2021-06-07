@@ -1,12 +1,39 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/works/works",
+    "pages/dongtai/dongtai",
+    "pages/yuwen/yuwen"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarTitleText": "乐哥的页面",
     "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "#FE9132",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "images/home-h.png"
+      },
+      {
+        "pagePath": "pages/works/works",
+        "text": "作品",
+        "iconPath": "/images/work.png",
+        "selectedIconPath": "images/work-h.png"
+      },
+      {
+        "pagePath": "pages/dongtai/dongtai",
+        "text": "动态",
+        "iconPath": "/images/dynamic.png",
+        "selectedIconPath": "images/dynamic-h.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

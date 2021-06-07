@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/yuwen/yuwen",
+          "pathName": "pages/yuwen/yuwen",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

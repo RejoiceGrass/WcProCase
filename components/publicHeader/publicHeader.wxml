@@ -1,0 +1,11 @@
+<view class="header">
+  <view class="container hdcon">
+    <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+      <image class="logo-image" mode="scaleToFill" src="/images/logo .png"></image>
+    </navigator>
+    <view class="kefu">
+      <button class="btn" open-type="contact"></button>
+      <image class="kefu-image" mode="scaleToFill" src="/images/kefu.png"></image>
+    </view>
+  </view>
+</view>

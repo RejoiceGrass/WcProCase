@@ -1,0 +1,8 @@
+<view class="pubTile">
+      <view class="txt">
+        <image class="tip" mode="scaleToFill"
+          src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4104395315,636886107&fm=26&gp=0.jpg"></image>
+        <view>{{myTitle}}</view>
+      </view>
+      <navigator open-type="reLaunch" url="{{myUrl}}" class="more">更多 ></navigator>
+</view>

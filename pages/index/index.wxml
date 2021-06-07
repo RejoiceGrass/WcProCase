@@ -1,15 +1,5 @@
 <!-- 导航栏 -->
-<view class="header">
-  <view class="container hdcon">
-    <navigator open-type="switchTab" url="/pages/index/index" class="logo">
-      <image class="logo-image" mode="scaleToFill" src="/images/logo .png"></image>
-    </navigator>
-    <view class="kefu">
-      <button class="btn" open-type="contact"></button>
-      <image class="kefu-image" mode="scaleToFill" src="/images/kefu.png"></image>
-    </view>
-  </view>
-</view>
+<publicHeader></publicHeader>
 <!-- 轮播图 -->
 <view class="banner">
   <swiper indicator-dots indicator-color="{255,255,255,0.5}" indicator-active-color="#fff" circular autoplay
@@ -29,7 +19,7 @@
 <!-- 主要学科 -->
 <scroll-view class="major" scroll-x>
   <view class="majorCon">
-    <navigator class="box" url="">
+    <navigator class="box" url="/pages/yuwen/yuwen">
       <image class="pic" src="/images/kecheng1.png"></image>
       <view class="txt">语文</view>
     </navigator>
@@ -54,14 +44,7 @@
 <!-- 作品区域 -->
 <view class="works">
   <view class="container">
-    <view class="pubTile">
-      <view class="txt">
-        <image class="tip" mode="scaleToFill"
-          src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4104395315,636886107&fm=26&gp=0.jpg"></image>
-        <view>学生作品</view>
-      </view>
-      <navigator class="more">更多 ></navigator>
-    </view>
+   <publicTitle myTitle="我的作品" myUrl="/pages/works/works"></publicTitle>
 
     <view class="wkMain">
       <navigator class="stuBox" wx:for="{{8}}" >
@@ -78,14 +61,7 @@
 <!-- 行业动态 -->
 <view class="dynamic">
   <view class="container">
-    <view class="pubTile">
-      <view class="txt">
-        <image class="tip" mode="scaleToFill"
-          src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4104395315,636886107&fm=26&gp=0.jpg"></image>
-        <view>行业动态</view>
-      </view>
-      <navigator class="more">更多 ></navigator>
-    </view>
+   <publicTitle myTitle="行业动态" myUrl="/pages/dongtai/dongtai"></publicTitle>
 
     <view class="dyMain" >
       <navigator class="dyItem" wx:for="{{5}}">
@@ -93,14 +69,20 @@
           <image mode="scaleToFill" src="/images/xsal5.jpg"></image>
         </view>
         <view class="dyTI">
-        <view class="dyText">
+        <view class="dyTitle">
           标题在这里
         </view>
         <view class="dyInfo">
-          作者: 司凯乐<text space="ensp"> - </text>时间: 2021-06-06
+          <text>作者</text>: 司凯乐<text space="ensp"> - </text><text>时间</text>: 2021-06-06
         </view>
         </view>
       </navigator>
     </view>
   </view>
+</view>
+
+<!-- 底Logo -->
+<view class="footer">
+  <image mode="widthFix"class="logoPic"src="/images/xsal3.jpg"></image>
+  <view class="logoText">--高大上小程序--</view>
 </view>

@@ -1,0 +1,21 @@
+.pubTile{
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.pubTile .txt{
+  font-size: 40rpx;
+  display: flex;
+  justify-content: space-between; 
+}
+.pubTile.more{
+  font-size: 34rpx;
+  color: black;
+}
+.tip{
+  width: 20rpx;
+  height: 40rpx;
+  margin-top: 8rpx;
+}

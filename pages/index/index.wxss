@@ -1,37 +1,5 @@
 /*导航栏*/
-.header{
-  width: 750rpx;
-  height: 100rpx;
-}
-.hdcon{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.hdcon navigator{
-  height: 50rpx;
-}
-.kefu{
-  position: relative;
-}
-.logo-image{
-  width: 50rpx;
-  height: 50rpx;
-}
-.kefu-image{
-  width: 50rpx;
-  height: 50rpx;
-}
-.kefu .btn{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left: 0;
-  opacity: 0;
-  animation: dh linear 1s infinite;
-}
+
 /*轮播图*/
 .banner{
   width: 100%;
@@ -70,27 +38,7 @@
   margin-top: 10rpx;
 }
 /* 学生作品标题*/
-.pubTile{
-  display: flex;
-  justify-content: space-between;
-  height: 60rpx;
-  align-items: center;
-  margin-bottom: 40rpx;
-}
-.pubTile .txt{
-  font-size: 40rpx;
-  display: flex;
-  justify-content: space-between; 
-}
-.pubTile.more{
-  font-size: 34rpx;
-  color: black;
-}
-.tip{
-  width: 20rpx;
-  height: 40rpx;
-  margin-top: 8rpx;
-}
+
 /*学员作品模块*/
 .works{
   background: #f0f3f8;
@@ -146,14 +94,44 @@
   display: flex;
   padding: 15 0;
   border: 1rpx dashed #f4f4f4;
+  justify-content: space-between;
 }
 
-.dyItem .dyTI{
-  flex:230rpx;
+
+.dyItem  .dyPic{
+  width: 230rpx;
+  height: 150rpx;
 }
-.dyItem .dyPic .image{
+.dyItem .dyPic image{
   width: 100%;
+  height: 100%;
 }
-.dyItem  .dyText{
-  flex: 440rpx;
+.dyItem .dyTI{
+  width: 440rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dyItem .dyTitle{
+  font-size: 34rpx;
+}
+.dyItem .dyInfo{
+  font-size: 26rpx;
+  color: #888;
+}
+.dyItem .dyInfo text{
+  font-size: 22rpx;
+}
+/* 底部 */
+.footer{
+  padding: 30rpx 0;
+  background-color: #f2f2f2f2;
+  text-align: center;
+}
+.footer .logoPic{
+  width: 180rpx;
+}
+.footer .logoText{
+  font-size: 25rpx;
+  color: #666;
 }
