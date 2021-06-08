@@ -47,7 +47,7 @@
    <publicTitle myTitle="我的作品" myUrl="/pages/works/works"></publicTitle>
 
     <view class="wkMain">
-      <navigator class="stuBox" wx:for="{{8}}" >
+      <navigator class="stuBox" wx:for="{{8}}" wx:key="index">
         <image class="stuPic" src="/images/xsal1.jpg"></image>
         <view class="stuPicView">
           <view class="stuPicTile">我的最爱</view>
@@ -64,7 +64,7 @@
    <publicTitle myTitle="行业动态" myUrl="/pages/dongtai/dongtai"></publicTitle>
 
     <view class="dyMain" >
-      <navigator class="dyItem" wx:for="{{5}}">
+      <navigator class="dyItem" wx:for="{{5}}" wx:key="index">
         <view class="dyPic">
           <image mode="scaleToFill" src="/images/xsal5.jpg"></image>
         </view>

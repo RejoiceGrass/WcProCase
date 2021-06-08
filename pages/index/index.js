@@ -11,7 +11,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url: 'https://ku.qingnian8.com/school/list.php',
+      data:{
+        mum:5
+      }
+    })
+
+    this.setData({
+    })
+    success:res=>{
+      res
+    }
   },
 
   /**
